@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://testserv.cn/2022/08/12/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</loc>
+    <loc>https://testserv.cn/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</loc>
+    
+    <lastmod>2022-08-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://testserv.cn/tags/index.html</loc>
+    
+    <lastmod>2022-08-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://testserv.cn/categories/index.html</loc>
     
     <lastmod>2022-08-13</lastmod>
     
@@ -64,33 +82,50 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://testserv.cn/tags/index.html</loc>
-    
-    <lastmod>2022-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://testserv.cn/categories/index.html</loc>
-    
-    <lastmod>2022-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://testserv.cn/</loc>
-    <lastmod>2022-08-13</lastmod>
+    <lastmod>2022-08-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
+  <url>
+    <loc>https://testserv.cn/tags/docker/</loc>
+    <lastmod>2022-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://testserv.cn/tags/oracle/</loc>
+    <lastmod>2022-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2022-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/</loc>
+    <lastmod>2022-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/8/</loc>
+    <lastmod>2022-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
