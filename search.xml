@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/"/>
+      <url>/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/</url>
+      
+        <content type="html"><![CDATA[<h1 id="配置部署目录"><a href="#配置部署目录" class="headerlink" title="配置部署目录"></a>配置部署目录</h1><p>工具-&gt;部署-&gt;配置</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">配置sftp连接</span><br><span class="line">配置本地目录与远程目录的映射</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>docker 安装Oracle12 (absolutapps/oracle-12c-ee )</title>
       <link href="/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/"/>
       <url>/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</url>

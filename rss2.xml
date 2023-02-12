@@ -4,18 +4,41 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>李同学的特殊用法</title>
-    <link>http://testserv.cn/</link>
+    <link>http://192.168.171.142/</link>
     
-    <atom:link href="http://testserv.cn/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="http://192.168.171.142/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>君子博学而日叁醒乎己，则知明而行无过矣</description>
-    <pubDate>Sat, 13 Aug 2022 06:03:15 GMT</pubDate>
+    <pubDate>Sat, 11 Feb 2023 03:43:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title></title>
+      <link>http://192.168.171.142/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/</link>
+      <guid>http://192.168.171.142/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/</guid>
+      <pubDate>Sat, 11 Feb 2023 03:41:05 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;配置部署目录&quot;&gt;&lt;a href=&quot;#配置部署目录&quot; class=&quot;headerlink&quot; title=&quot;配置部署目录&quot;&gt;&lt;/a&gt;配置部署目录&lt;/h1&gt;&lt;p&gt;工具-&amp;gt;部署-&amp;gt;配置&lt;/p&gt;
+&lt;figure class=&quot;highlight text&quot;&gt;&lt;t</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="配置部署目录"><a href="#配置部署目录" class="headerlink" title="配置部署目录"></a>配置部署目录</h1><p>工具-&gt;部署-&gt;配置</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">配置sftp连接</span><br><span class="line">配置本地目录与远程目录的映射</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://192.168.171.142/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>docker 安装Oracle12 (absolutapps/oracle-12c-ee )</title>
-      <link>http://testserv.cn/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</link>
-      <guid>http://testserv.cn/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</guid>
+      <link>http://192.168.171.142/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</link>
+      <guid>http://192.168.171.142/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/</guid>
       <pubDate>Fri, 12 Aug 2022 07:15:31 GMT</pubDate>
       
         
@@ -30,26 +53,26 @@
       <content:encoded><![CDATA[<span id="more"></span><p><a href="https://hub.docker.com/r/absolutapps/oracle-12c-ee">docker hub</a></p><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull absolutapps/oracle-12c-ee</span><br></pre></td></tr></table></figure><!-- more --><h1 id="启动（自行修改端口即可）"><a href="#启动（自行修改端口即可）" class="headerlink" title="启动（自行修改端口即可）"></a>启动（自行修改端口即可）</h1><h2 id="创建一个文件夹来挂载数据"><a href="#创建一个文件夹来挂载数据" class="headerlink" title="创建一个文件夹来挂载数据"></a>创建一个文件夹来挂载数据</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /data/app/oracle </span><br><span class="line"><span class="built_in">cd</span> /data/app/oracle </span><br></pre></td></tr></table></figure><h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name oracle \</span><br><span class="line">  --privileged -v $(pwd)/oradata:/u01/app/oracle \</span><br><span class="line">  -p 8080:8080 -p 1521:1521 absolutapps/oracle-12c-ee </span><br></pre></td></tr></table></figure><h2 id="查看启动日志"><a href="#查看启动日志" class="headerlink" title="查看启动日志"></a>查看启动日志</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">(base) [root@lqz-test ~]# docker logs -f 7d84ab48f97d</span><br><span class="line">ls: cannot access /u01/app/oracle/oradata/orcl: No such file or directory</span><br><span class="line">No databases found in /u01/app/oracle/oradata/orcl. About to create a new database instance</span><br><span class="line">Starting database listener</span><br><span class="line"></span><br><span class="line">LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 12-AUG-2022 01:01:38</span><br><span class="line"></span><br><span class="line">Copyright (c) 1991, 2014, Oracle.  All rights reserved.</span><br><span class="line"></span><br><span class="line">Starting /u01/app/oracle/product/12.1.0.2/dbhome_1/bin/tnslsnr: please wait...</span><br><span class="line"></span><br><span class="line">TNSLSNR for Linux: Version 12.1.0.2.0 - Production</span><br><span class="line">System parameter file is /u01/app/oracle/product/12.1.0.2/dbhome_1/network/admin/listener.ora</span><br><span class="line">Log messages written to /u01/app/oracle/diag/tnslsnr/7d84ab48f97d/listener/alert/log.xml</span><br><span class="line">Listening on: (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=7d84ab48f97d)(PORT=1521)))</span><br><span class="line"></span><br><span class="line">Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=7d84ab48f97d)(PORT=1521)))</span><br><span class="line">STATUS of the LISTENER</span><br><span class="line">------------------------</span><br><span class="line">Alias                     LISTENER</span><br><span class="line">Version                   TNSLSNR for Linux: Version 12.1.0.2.0 - Production</span><br><span class="line">Start Date                12-AUG-2022 01:01:38</span><br><span class="line">Uptime                    0 days 0 hr. 0 min. 0 sec</span><br><span class="line">Trace Level               off</span><br><span class="line">Security                  ON: Local OS Authentication</span><br><span class="line">SNMP                      OFF</span><br><span class="line">Listener Parameter File   /u01/app/oracle/product/12.1.0.2/dbhome_1/network/admin/listener.ora</span><br><span class="line">Listener Log File         /u01/app/oracle/diag/tnslsnr/7d84ab48f97d/listener/alert/log.xml</span><br><span class="line">Listening Endpoints Summary...</span><br><span class="line">  (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=7d84ab48f97d)(PORT=1521)))</span><br><span class="line">The listener supports no services</span><br><span class="line">The command completed successfully</span><br><span class="line">Copying database files</span><br><span class="line"><span class="meta prompt_">1% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">3% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">11% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">18% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">26% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">37% </span><span class="language-bash">complete</span></span><br><span class="line">Creating and starting Oracle instance</span><br><span class="line"><span class="meta prompt_">40% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">45% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">50% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">55% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">56% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">60% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">62% </span><span class="language-bash">complete</span></span><br><span class="line">Completing Database Creation</span><br><span class="line"><span class="meta prompt_">66% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">70% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">73% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">85% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">96% </span><span class="language-bash">complete</span></span><br><span class="line"><span class="meta prompt_">100% </span><span class="language-bash">complete</span></span><br><span class="line">Look at the log file &quot;/u01/app/oracle/cfgtoollogs/dbca/orcl/orcl.log&quot; for further details.</span><br><span class="line"></span><br><span class="line">LSNRCTL for Linux: Version 12.1.0.2.0 - Production on 12-AUG-2022 01:05:54</span><br><span class="line"></span><br><span class="line">Copyright (c) 1991, 2014, Oracle.  All rights reserved.</span><br><span class="line"></span><br><span class="line">Connecting to (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=7d84ab48f97d)(PORT=1521)))</span><br><span class="line">The command completed successfully</span><br><span class="line">Database has been created in /u01/app/oracle/oradata/orcl</span><br><span class="line">SYS and SYSTEM passwords are set to [oracle]</span><br><span class="line">Setting HTTP port to 8080</span><br><span class="line"></span><br><span class="line">PL/SQL procedure successfully completed.</span><br><span class="line"></span><br><span class="line">Please login to http://&lt;ip_address&gt;:8080/em to use enterprise manager</span><br><span class="line">User: sys; Password oracle; Sysdba: true</span><br><span class="line">Fixing permissions...</span><br><span class="line">Running init scripts...</span><br><span class="line">Init scripts in /oracle.init.d/: Ignoring /oracle.init.d/*</span><br><span class="line"></span><br><span class="line">Done with scripts we are ready to go</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="进入刚刚创建的container中-并登录oracle库"><a href="#进入刚刚创建的container中-并登录oracle库" class="headerlink" title="进入刚刚创建的container中,并登录oracle库"></a>进入刚刚创建的container中,并登录oracle库</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 7d84ab48f97d /bin/sh</span><br><span class="line">sh-4.2# su oracle</span><br><span class="line">[oracle@7d84ab48f97d /]$ $ORACLE_HOME/bin/sqlplus / as sysdba</span><br><span class="line"></span><br><span class="line">SQL*Plus: Release 12.1.0.2.0 Production on Fri Aug 12 07:25:10 2022</span><br><span class="line"></span><br><span class="line">Copyright (c) 1982, 2014, Oracle.  All rights reserved.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Connected to:</span><br><span class="line">Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production</span><br><span class="line">With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">conn system/oracle as sysdba;</span></span><br><span class="line">Connected.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash"> </span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="修改密码："><a href="#修改密码：" class="headerlink" title="修改密码："></a>修改密码：</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> <span class="keyword">system</span> identified <span class="keyword">by</span> oracle;</span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> sys identified <span class="keyword">by</span> sys;</span><br><span class="line"><span class="keyword">ALTER</span> PROFILE <span class="keyword">DEFAULT</span> LIMIT PASSWORD_LIFE_TIME UNLIMITED;</span><br></pre></td></tr></table></figure><h2 id="创建用户"><a href="#创建用户" class="headerlink" title="创建用户"></a>创建用户</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">user</span> test identified <span class="keyword">by</span> test;</span><br></pre></td></tr></table></figure><p>并给用户赋予权限</p><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">grant</span> <span class="keyword">connect</span>,resource,dba <span class="keyword">to</span> test; </span><br></pre></td></tr></table></figure><p>操作如下</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[root@iz2zej4i2jdf3i8bhr61xsz ~]# docker exec -it 6fea41c62a88 /bin/bash</span><br><span class="line">[root@6fea41c62a88 /]# su oracle</span><br><span class="line">[oracle@6fea41c62a88 /]$ $ORACLE_HOME/bin/sqlplus / as sysdba</span><br><span class="line">SQL*Plus: Release 12.1.0.2.0 Production on Sun Jan 19 05:20:04 2020</span><br><span class="line">Copyright (c) 1982, 2014, Oracle.  All rights reserved.</span><br><span class="line">Connected to:</span><br><span class="line">Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production</span><br><span class="line">With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">conn system/oracle as sysdba;</span></span><br><span class="line">Connected.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">   alter user system identified by oracle;</span></span><br><span class="line">User altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash"> alter user sys identified by sys;</span></span><br><span class="line">User altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;</span></span><br><span class="line">Profile altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">create user <span class="built_in">test</span> identified by <span class="built_in">test</span>;</span></span><br><span class="line">User created.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">grant connect,resource,dba to <span class="built_in">test</span>;</span></span><br><span class="line">Grant succeeded.</span><br></pre></td></tr></table></figure><h1 id="然后使用Navicat链接"><a href="#然后使用Navicat链接" class="headerlink" title="然后使用Navicat链接"></a>然后使用Navicat链接</h1><p><img src="/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg" alt="222"></p>]]></content:encoded>
       
       
-      <category domain="http://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">日常工作经验记录</category>
+      <category domain="http://192.168.171.142/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/">日常工作经验记录</category>
       
-      <category domain="http://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/">2022</category>
+      <category domain="http://192.168.171.142/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/">2022</category>
       
-      <category domain="http://testserv.cn/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/8/">8</category>
-      
-      
-      <category domain="http://testserv.cn/tags/docker/">docker</category>
-      
-      <category domain="http://testserv.cn/tags/oracle/">oracle</category>
+      <category domain="http://192.168.171.142/categories/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E8%AE%B0%E5%BD%95/2022/8/">8</category>
       
       
-      <comments>http://testserv.cn/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/#disqus_thread</comments>
+      <category domain="http://192.168.171.142/tags/docker/">docker</category>
+      
+      <category domain="http://192.168.171.142/tags/oracle/">oracle</category>
+      
+      
+      <comments>http://192.168.171.142/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>Hello World</title>
-      <link>http://testserv.cn/2022/08/09/hello-world/</link>
-      <guid>http://testserv.cn/2022/08/09/hello-world/</guid>
+      <link>http://192.168.171.142/2022/08/09/hello-world/</link>
+      <guid>http://192.168.171.142/2022/08/09/hello-world/</guid>
       <pubDate>Tue, 09 Aug 2022 10:29:09 GMT</pubDate>
       
         
@@ -64,14 +87,14 @@
       
       
       
-      <comments>http://testserv.cn/2022/08/09/hello-world/#disqus_thread</comments>
+      <comments>http://192.168.171.142/2022/08/09/hello-world/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>next优化主题</title>
-      <link>http://testserv.cn/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/</link>
-      <guid>http://testserv.cn/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/</guid>
+      <link>http://192.168.171.142/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/</link>
+      <guid>http://192.168.171.142/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/</guid>
       <pubDate>Mon, 08 Aug 2022 00:21:51 GMT</pubDate>
       
       <description>&lt;h1 id=&quot;next优化主题&quot;&gt;&lt;a href=&quot;#next优化主题&quot; class=&quot;headerlink&quot; title=&quot;next优化主题&quot;&gt;&lt;/a&gt;next优化主题&lt;/h1&gt;&lt;p&gt;主要参考文献：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/106060640&quot;&gt;https://zhuanlan.zhihu.com/p/106060640&lt;/a&gt;&lt;/p&gt;
@@ -87,14 +110,14 @@
       
       
       
-      <comments>http://testserv.cn/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/#disqus_thread</comments>
+      <comments>http://192.168.171.142/2022/08/08/next%E4%BC%98%E5%8C%96%E4%B8%BB%E9%A2%98/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>开始，hexo部署文档</title>
-      <link>http://testserv.cn/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/</link>
-      <guid>http://testserv.cn/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/</guid>
+      <link>http://192.168.171.142/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/</link>
+      <guid>http://192.168.171.142/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/</guid>
       <pubDate>Sun, 07 Aug 2022 22:53:13 GMT</pubDate>
       
       <description>&lt;h1 id=&quot;搭建过程&quot;&gt;&lt;a href=&quot;#搭建过程&quot; class=&quot;headerlink&quot; title=&quot;搭建过程&quot;&gt;&lt;/a&gt;搭建过程&lt;/h1&gt;&lt;h2 id=&quot;linux基础环境（git-nodejs-Hexo）&quot;&gt;&lt;a href=&quot;#linux基础环境（git-nodejs-Hexo）&quot; class=&quot;headerlink&quot; title=&quot;linux基础环境（git+nodejs+Hexo）&quot;&gt;&lt;/a&gt;linux基础环境（git+nodejs+Hexo）&lt;/h2&gt;&lt;h3 id=&quot;linux-虚拟机版本&quot;&gt;&lt;a href=&quot;#linux-虚拟机版本&quot; class=&quot;headerlink&quot; title=&quot;linux 虚拟机版本&quot;&gt;&lt;/a&gt;linux 虚拟机版本&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;root@userapp-ubuntu02:/data/app&lt;span class=&quot;comment&quot;&gt;# lsb_release -a&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;No LSB modules are available.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Distributor ID:	Ubuntu&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Description:	Ubuntu 22.04 LTS&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Release:	22.04&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Codename:	jammy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -107,7 +130,7 @@
       
       
       
-      <comments>http://testserv.cn/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/#disqus_thread</comments>
+      <comments>http://192.168.171.142/2022/08/08/%E5%BC%80%E5%A7%8B%EF%BC%8Chexo%E9%83%A8%E7%BD%B2%E6%96%87%E6%A1%A3/#disqus_thread</comments>
       
     </item>
     
