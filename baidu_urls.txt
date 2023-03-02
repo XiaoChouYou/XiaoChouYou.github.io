@@ -1,5 +1,5 @@
-https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/
 https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/1-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/
-https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/Kubernetes%20%E6%8C%87%E5%AE%9A%E5%A4%96%E9%83%A8%E8%AE%BF%E9%97%AEservice%E7%9A%84%E7%AB%AF%E5%8F%A3/
 https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/
+https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/K8S%20API%E8%B5%84%E6%BA%90%E2%80%94ApiGroup%E3%80%81Resources%E5%92%8CVerbs/
+https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/Kubernetes%20%E6%8C%87%E5%AE%9A%E5%A4%96%E9%83%A8%E8%AE%BF%E9%97%AEservice%E7%9A%84%E7%AB%AF%E5%8F%A3/
 https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/dashboard/
