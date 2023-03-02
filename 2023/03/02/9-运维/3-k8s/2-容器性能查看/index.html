@@ -26,27 +26,27 @@
   <meta name="description" content="资料1: 部署metrics-server 采集pod资源占用数据metrics-server可以采集各个pod上的资源占用数据，如内存、cpu占用率。 部署metrics-server 采集pod资源占用数据12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152">
 <meta property="og:type" content="article">
 <meta property="og:title" content="容器性能查看">
-<meta property="og:url" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/index.html">
+<meta property="og:url" content="https://xiaochouyou.github.io/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/index.html">
 <meta property="og:site_name" content="李同学的特殊用法">
 <meta property="og:description" content="资料1: 部署metrics-server 采集pod资源占用数据metrics-server可以采集各个pod上的资源占用数据，如内存、cpu占用率。 部署metrics-server 采集pod资源占用数据12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_5.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_6.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_8.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_9.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_10.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_11.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_12.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_13.png">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_14.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_5.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_6.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_8.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_9.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_10.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_11.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_12.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_13.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_14.png">
 <meta property="article:published_time" content="2023-03-02T00:21:51.000Z">
 <meta property="article:modified_time" content="2023-03-02T08:07:01.888Z">
 <meta property="article:author" content="秋天以北">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png">
+<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png">
 
-<link rel="canonical" href="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/">
+<link rel="canonical" href="https://xiaochouyou.github.io/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/">
 
 
 <script id="page-configurations">
@@ -215,7 +215,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/">
+    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myblog/images/avatar.jpg">
@@ -312,12 +312,12 @@
 <p>资源效率：Metrics Server使用0.5m的CPU核心，每个节点使用4 MB的内存</p>
 <p>用于监测node,pod等的CPU，内存使用情况。</p>
 <p>推荐版本 0.3.6 阿里源有资源包可以拉取镜像</p>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png" alt="img_7.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_7.png" alt="img_7.png"></p>
 <p>项目下载地址</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.3.6">https://github.com/kubernetes-sigs/metrics-server/releases/tag/v0.3.6</a></p>
 <h2 id="1、修改配置"><a href="#1、修改配置" class="headerlink" title="1、修改配置"></a>1、修改配置</h2><p>检查 API Server 是否开启了 Aggregator Routing：查看 API Server 是否具有 –enable-aggregator-routing&#x3D;true 选项。<br>···swift<br>[root@k8s-master ~]# ps -ef |grep apiserver|grep true</p>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_5.png" alt="img_5.png"></p>
-<h3 id="1-1添加参数"><a href="#1-1添加参数" class="headerlink" title="1.1添加参数"></a>1.1添加参数</h3><p>[root@k8s-master ~]# grep -A 10 command &#x2F;etc&#x2F;kubernetes&#x2F;manifests&#x2F;kube-apiserver.yaml<br><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_6.png" alt="img_6.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_5.png" alt="img_5.png"></p>
+<h3 id="1-1添加参数"><a href="#1-1添加参数" class="headerlink" title="1.1添加参数"></a>1.1添加参数</h3><p>[root@k8s-master ~]# grep -A 10 command &#x2F;etc&#x2F;kubernetes&#x2F;manifests&#x2F;kube-apiserver.yaml<br><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_6.png" alt="img_6.png"></p>
 <ul>
 <li>–enable-aggregator-routing&#x3D;true<br>kubeadm部署的在&#x2F;etc&#x2F;kubernetes&#x2F;manifests&#x2F;kube-apiserver.yaml这里修改，kubelet会监听这个yaml文件的变化修改这个文件后kubelet会将自动终止原有的 kube-apiserver的 Pod，并自动创建一个使用了新配置参数的 Pod 作为替代。</li>
 </ul>
@@ -327,24 +327,24 @@
 <p>修改配置，根据群集设置</p>
 <ul>
 <li>–kubelet-insecure-tls #不要验证Kubelets提供的服务证书的CA。仅用于测试目的。</li>
-<li>–kubelet-preferred-address-types&#x3D;InternalIP #metrics-server默认使用的是hostname，但是coredns中并没有三台物理机器的hostname和IP地址的关系，需要改为使用主机IP地址；<br><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_8.png" alt="img_8.png"><br>部署metrics-server</li>
+<li>–kubelet-preferred-address-types&#x3D;InternalIP #metrics-server默认使用的是hostname，但是coredns中并没有三台物理机器的hostname和IP地址的关系，需要改为使用主机IP地址；<br><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_8.png" alt="img_8.png"><br>部署metrics-server</li>
 </ul>
-<p>kubectl apply -f components.yaml<br><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_9.png" alt="img_9.png"></p>
+<p>kubectl apply -f components.yaml<br><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_9.png" alt="img_9.png"></p>
 <h1 id="使用效果"><a href="#使用效果" class="headerlink" title="使用效果"></a>使用效果</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get pods -n kube-system</span><br></pre></td></tr></table></figure>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_10.png" alt="img_10.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_10.png" alt="img_10.png"></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl top pods -A</span><br></pre></td></tr></table></figure>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_11.png" alt="img_11.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_11.png" alt="img_11.png"></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl top node</span><br></pre></td></tr></table></figure>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_12.png" alt="img_12.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_12.png" alt="img_12.png"></p>
 <p>在node节点上<br>docker ps -a |grep sh*** 可以找出名称中包含sh*** 的 容器</p>
-<p>docker top CONTAINER ID<br>可以查看具体某个容器的 情况<br><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_13.png" alt="img_13.png"></p>
+<p>docker top CONTAINER ID<br>可以查看具体某个容器的 情况<br><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_13.png" alt="img_13.png"></p>
 <p>docker stats 命令查看<br>docker stats 命令用来返回运行中的容器的实时数据流,</p>
 <p>默认情况下，stats 使用参数-a或者–all，命令会每隔 1 秒钟刷新一次输出的内容直到你按下 ctrl + c。</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">docker stats -a</span><br><span class="line"></span><br><span class="line">CONTAINER ID CPU % MEM USAGE / LIMIT MEM % NET I/O BLOCK I/O PIDS</span><br><span class="line">1ad181f01c76 0.00% 1.766MiB / 30.89GiB 0.01% 0B / 0B 0B / 0B 1</span><br><span class="line">73c1189ddd0e 0.04% 1.178GiB / 2GiB 58.88% 0B / 0B 0B / 254kB 68</span><br><span class="line">ed1a36493259 0.00% 1.25MiB / 30.89GiB 0.00% 0B / 0B 0B / 0B 1</span><br><span class="line">05c08624b3d7 0.00% 1.543MiB / 30.89GiB 0.00% 0B / 0B 0B / 0B 1</span><br><span class="line">9013e1d0a243 0.00% 1.578MiB / 30.89GiB 0.00% 0B / 0B 0B / 0B 1</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[CONTAINER]：以短格式显示容器的 ID。</span><br><span class="line">[CPU %]：CPU 的使用情况。</span><br><span class="line">[MEM USAGE / LIMIT]：当前使用的内存和最大可以使用的内存。</span><br><span class="line">[MEM %]：以百分比的形式显示内存使用情况。</span><br><span class="line">[NET I/O]：网络 I/O 数据。</span><br><span class="line">[BLOCK I/O]：磁盘 I/O 数据。</span><br><span class="line">[PIDS]：PID 号。</span><br></pre></td></tr></table></figure>
 <p>格式化输出 </p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker stats --no-stream --format &quot;table &#123;&#123;.Container&#125;&#125;\t&#123;&#123;.Name&#125;&#125;\t&#123;&#123;.CPUPerc&#125;&#125;\t&#123;&#123;.MemUsage&#125;&#125;&quot;</span><br></pre></td></tr></table></figure>
-<p><img src="/myblog/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_14.png" alt="img_14.png"></p>
+<p><img src="/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/imgs/img_14.png" alt="img_14.png"></p>
 <p>上面的命令中我们只输出了 Name, CPUPerc 和 Memusage 三列。</p>
 <p>下面是自定义的格式中可以使用的所有占位符：</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.Container 根据用户指定的名称显示容器的名称或 ID。</span><br><span class="line">.Name 容器名称。</span><br><span class="line">.ID 容器 ID。</span><br><span class="line">.CPUPerc CPU 使用率。</span><br><span class="line">.MemUsage 内存使用量。</span><br><span class="line">.NetIO 网络 I/O。</span><br><span class="line">.BlockIO 磁盘 I/O。</span><br><span class="line">.MemPerc 内存使用率。</span><br><span class="line">.PIDs PID 号。</span><br></pre></td></tr></table></figure>
@@ -392,7 +392,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xiaochouyou.github.io/myblog/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/" title="容器性能查看">https://xiaochouyou.github.io/myblog/2023/03/02/9-运维/3-k8s/2-容器性能查看/</a>
+    <a href="https://xiaochouyou.github.io/2023/03/02/9-%E8%BF%90%E7%BB%B4/3-k8s/2-%E5%AE%B9%E5%99%A8%E6%80%A7%E8%83%BD%E6%9F%A5%E7%9C%8B/" title="容器性能查看">https://xiaochouyou.github.io/2023/03/02/9-运维/3-k8s/2-容器性能查看/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！

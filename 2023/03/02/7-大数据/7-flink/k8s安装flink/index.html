@@ -26,18 +26,18 @@
   <meta name="description" content="安装介绍由于项目所需，需要从零开始部署flink on kubernetes。项目的生产环境是完全的内网，需要提前下载所有所需的安装包，进行离线安装。我们公司没有人接触过kubernetes，只听说过，之前使用的flink都是flink on yarn，网上找了好多好多安装flink on kubernetes的文档，但几乎全都是在线安装，到处都少步骤，对于初次接触kubernetes的人特别不友">
 <meta property="og:type" content="article">
 <meta property="og:title" content="k8s部署flink">
-<meta property="og:url" content="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/index.html">
+<meta property="og:url" content="https://xiaochouyou.github.io/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/index.html">
 <meta property="og:site_name" content="李同学的特殊用法">
 <meta property="og:description" content="安装介绍由于项目所需，需要从零开始部署flink on kubernetes。项目的生产环境是完全的内网，需要提前下载所有所需的安装包，进行离线安装。我们公司没有人接触过kubernetes，只听说过，之前使用的flink都是flink on yarn，网上找了好多好多安装flink on kubernetes的文档，但几乎全都是在线安装，到处都少步骤，对于初次接触kubernetes的人特别不友">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png">
 <meta property="article:published_time" content="2023-03-02T00:21:51.000Z">
 <meta property="article:modified_time" content="2023-03-02T07:48:44.050Z">
 <meta property="article:author" content="秋天以北">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png">
+<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png">
 
-<link rel="canonical" href="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/">
+<link rel="canonical" href="https://xiaochouyou.github.io/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/">
 
 
 <script id="page-configurations">
@@ -206,7 +206,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/">
+    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myblog/images/avatar.jpg">
@@ -460,7 +460,7 @@
 <p>集群启动完成<br>查看启动情况</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@vmlinux4 pods]# kubectl get pod -o wide</span><br><span class="line">NAME                                READY   STATUS    RESTARTS   AGE    IP            NODE            NOMINATED NODE</span><br><span class="line">flink-jobmanager-84f5464b7c-h74gt   1/1     Running   0          130m   172.20.87.2   192.168.0.106   &lt;none&gt;</span><br><span class="line">flink-taskmanager-8d856fc49-b9sx9   1/1     Running   0          130m   172.20.69.2   192.168.0.105   &lt;none&gt;</span><br><span class="line">flink-taskmanager-8d856fc49-vpz99   1/1     Running   0          130m   172.20.87.3   192.168.0.106   &lt;none&gt;</span><br><span class="line">flink-taskmanager-8d856fc49-xfdr2   1/1     Running   0          130m   172.20.64.2   192.168.0.104   &lt;none&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="（3）启动service的对外服务"><a href="#（3）启动service的对外服务" class="headerlink" title="（3）启动service的对外服务"></a>（3）启动service的对外服务</h4><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@vmlinux4 pods]# kubectl proxy --address=’192.168.0.104’ -p=8001 --accept-hosts=’^*$’</span><br><span class="line">Staring to server on 192.168.0.104:8001</span><br></pre></td></tr></table></figure>
-<h4 id="（4）访问flink"><a href="#（4）访问flink" class="headerlink" title="（4）访问flink"></a>（4）访问flink</h4><p>在浏览器输入地址<br><a target="_blank" rel="noopener" href="http://192.168.0.104:8001/api/v1/namespaces/default/services/flink-jobmanager:ui/proxy">http://192.168.0.104:8001/api/v1/namespaces/default/services/flink-jobmanager:ui/proxy</a><br>访问flink<br><img src="/myblog/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png" alt="img.png"></p>
+<h4 id="（4）访问flink"><a href="#（4）访问flink" class="headerlink" title="（4）访问flink"></a>（4）访问flink</h4><p>在浏览器输入地址<br><a target="_blank" rel="noopener" href="http://192.168.0.104:8001/api/v1/namespaces/default/services/flink-jobmanager:ui/proxy">http://192.168.0.104:8001/api/v1/namespaces/default/services/flink-jobmanager:ui/proxy</a><br>访问flink<br><img src="/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/img.png" alt="img.png"></p>
 <h2 id="四、报错处理"><a href="#四、报错处理" class="headerlink" title="四、报错处理"></a>四、报错处理</h2><p>以下是安装过程中遇到的报错</p>
 <h3 id="1-启动etcd报错"><a href="#1-启动etcd报错" class="headerlink" title="1.启动etcd报错"></a>1.启动etcd报错</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[root@vmlinux1 bin]# kube-apiserver $KUBE_API_ARGS</span><br><span class="line">[root@vmlinux1 bin]# echo $KUBE_API_ARGS</span><br><span class="line">–storage-backend=etcd3 --etcd-servers=http://192.168.0.101:2379 --insecure-bind-address=0.0.0.0 --insecure-port=8080 --service-cluster-ip-range=169.169.0.0/16 --service-node-port-range=1-65535 --admission-control=NamespaceLifecycle,LimitRanger,ResourceQuota --logtostderr=false --log-dir=/var/log/kubernets/log --v=2</span><br><span class="line"></span><br><span class="line">E1024 16:42:22.290363 93923 repair.go:171] the cluster IP 10.0.0.1 for service kubernetes/default is not within the service CIDR 169.169.0.0/16; please recreate</span><br><span class="line">E1024 16:42:22.290861 93923 repair.go:188] the cluster IP 10.0.0.1 may have leaked: flagging for later clean up</span><br><span class="line">E1024 16:42:22.293248 93923 repair.go:195] the cluster IP 10.0.0.1 may have leaked, but can not be allocated: provided IP is not in the valid range. The range of valid IPs is 169.169.0.0/16</span><br><span class="line">E1024 16:42:22.320465 93923 repair.go:171] the cluster IP 10.0.0.1 for service kubernetes/default is not within the service CIDR 169.169.0.0/16; please recreate</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>启动etcd报错<br>rafthttp: failed to find member as2das3eadasd in cluster 2323432kjh4bjwhbd<br>注意:节点删除后，集群中的成员信息会更新，新节点加入集群是作为一个全新的节点加入，如果data-dir有数据，etcd启动时会读取己经存在的数据，启动时仍然用的老member ID,也会造成，集群不无法加入，所以一定要清空新节点的data-dir</p>
@@ -525,7 +525,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xiaochouyou.github.io/myblog/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/" title="k8s部署flink">https://xiaochouyou.github.io/myblog/2023/03/02/7-大数据/7-flink/k8s安装flink/</a>
+    <a href="https://xiaochouyou.github.io/2023/03/02/7-%E5%A4%A7%E6%95%B0%E6%8D%AE/7-flink/k8s%E5%AE%89%E8%A3%85flink/" title="k8s部署flink">https://xiaochouyou.github.io/2023/03/02/7-大数据/7-flink/k8s安装flink/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！

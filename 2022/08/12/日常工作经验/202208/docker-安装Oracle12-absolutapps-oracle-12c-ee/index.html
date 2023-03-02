@@ -26,20 +26,20 @@
   <meta name="description" content="docker hub 下载1docker pull absolutapps&#x2F;oracle-12c-ee   启动（自行修改端口即可）创建一个文件夹来挂载数据12mkdir -p &#x2F;data&#x2F;app&#x2F;oracle cd &#x2F;data&#x2F;app&#x2F;oracle  启动123docker run -d --name oracle \  --privileged -v $(pwd)&#x2F;oradata:&#x2F;u01&#x2F;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="docker 安装Oracle12 (absolutapps&#x2F;oracle-12c-ee )">
-<meta property="og:url" content="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/index.html">
+<meta property="og:url" content="https://xiaochouyou.github.io/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/index.html">
 <meta property="og:site_name" content="李同学的特殊用法">
 <meta property="og:description" content="docker hub 下载1docker pull absolutapps&#x2F;oracle-12c-ee   启动（自行修改端口即可）创建一个文件夹来挂载数据12mkdir -p &#x2F;data&#x2F;app&#x2F;oracle cd &#x2F;data&#x2F;app&#x2F;oracle  启动123docker run -d --name oracle \  --privileged -v $(pwd)&#x2F;oradata:&#x2F;u01&#x2F;">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://xiaochouyou.github.io/myblog/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg">
+<meta property="og:image" content="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg">
 <meta property="article:published_time" content="2022-08-12T07:15:31.000Z">
 <meta property="article:modified_time" content="2022-08-13T06:03:15.135Z">
 <meta property="article:author" content="秋天以北">
 <meta property="article:tag" content="docker">
 <meta property="article:tag" content="oracle">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg">
+<meta name="twitter:image" content="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg">
 
-<link rel="canonical" href="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/">
+<link rel="canonical" href="https://xiaochouyou.github.io/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/">
 
 
 <script id="page-configurations">
@@ -208,7 +208,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/">
+    <link itemprop="mainEntityOfPage" href="https://xiaochouyou.github.io/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/myblog/images/avatar.jpg">
@@ -311,7 +311,7 @@
 <p>操作如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[root@iz2zej4i2jdf3i8bhr61xsz ~]# docker exec -it 6fea41c62a88 /bin/bash</span><br><span class="line">[root@6fea41c62a88 /]# su oracle</span><br><span class="line">[oracle@6fea41c62a88 /]$ $ORACLE_HOME/bin/sqlplus / as sysdba</span><br><span class="line">SQL*Plus: Release 12.1.0.2.0 Production on Sun Jan 19 05:20:04 2020</span><br><span class="line">Copyright (c) 1982, 2014, Oracle.  All rights reserved.</span><br><span class="line">Connected to:</span><br><span class="line">Oracle Database 12c Enterprise Edition Release 12.1.0.2.0 - 64bit Production</span><br><span class="line">With the Partitioning, OLAP, Advanced Analytics and Real Application Testing options</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">conn system/oracle as sysdba;</span></span><br><span class="line">Connected.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">   alter user system identified by oracle;</span></span><br><span class="line">User altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash"> alter user sys identified by sys;</span></span><br><span class="line">User altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">ALTER PROFILE DEFAULT LIMIT PASSWORD_LIFE_TIME UNLIMITED;</span></span><br><span class="line">Profile altered.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">create user <span class="built_in">test</span> identified by <span class="built_in">test</span>;</span></span><br><span class="line">User created.</span><br><span class="line"><span class="meta prompt_">SQL&gt; </span><span class="language-bash">grant connect,resource,dba to <span class="built_in">test</span>;</span></span><br><span class="line">Grant succeeded.</span><br></pre></td></tr></table></figure>
 
-<h1 id="然后使用Navicat链接"><a href="#然后使用Navicat链接" class="headerlink" title="然后使用Navicat链接"></a>然后使用Navicat链接</h1><p><img src="/myblog/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg" alt="222"></p>
+<h1 id="然后使用Navicat链接"><a href="#然后使用Navicat链接" class="headerlink" title="然后使用Navicat链接"></a>然后使用Navicat链接</h1><p><img src="/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/1660291415208.jpg" alt="222"></p>
 
     </div>
 
@@ -353,7 +353,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://xiaochouyou.github.io/myblog/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/" title="docker 安装Oracle12 (absolutapps&#x2F;oracle-12c-ee )">https://xiaochouyou.github.io/myblog/2022/08/12/日常工作经验/202208/docker-安装Oracle12-absolutapps-oracle-12c-ee/</a>
+    <a href="https://xiaochouyou.github.io/2022/08/12/%E6%97%A5%E5%B8%B8%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C/202208/docker-%E5%AE%89%E8%A3%85Oracle12-absolutapps-oracle-12c-ee/" title="docker 安装Oracle12 (absolutapps&#x2F;oracle-12c-ee )">https://xiaochouyou.github.io/2022/08/12/日常工作经验/202208/docker-安装Oracle12-absolutapps-oracle-12c-ee/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
