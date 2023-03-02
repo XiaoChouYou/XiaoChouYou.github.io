@@ -23,24 +23,17 @@
     var CONFIG = {"hostname":"192.168.171.142","root":"/myblog/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="解决k8s中命名空间无法删除的问题情况： Kubectl delete ns XXXX 后， namespace 一直处于 Terminating 状态。 使用： kubectl delete ns monitoring –grace-period&#x3D;0 –force 后，也无法删除。 原因分析： 删除时，报错： warning: Immediate deletion does not w">
-<meta property="og:type" content="article">
+  <meta name="description" content="君子博学而日叁醒乎己，则知明而行无过矣">
+<meta property="og:type" content="website">
 <meta property="og:title" content="李同学的特殊用法">
-<meta property="og:url" content="http://192.168.171.142/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/index.html">
+<meta property="og:url" content="http://192.168.171.142/myblog/archives/2023/page/2/index.html">
 <meta property="og:site_name" content="李同学的特殊用法">
-<meta property="og:description" content="解决k8s中命名空间无法删除的问题情况： Kubectl delete ns XXXX 后， namespace 一直处于 Terminating 状态。 使用： kubectl delete ns monitoring –grace-period&#x3D;0 –force 后，也无法删除。 原因分析： 删除时，报错： warning: Immediate deletion does not w">
+<meta property="og:description" content="君子博学而日叁醒乎己，则知明而行无过矣">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://192.168.171.142/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img.png">
-<meta property="og:image" content="http://192.168.171.142/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_1.png">
-<meta property="og:image" content="http://192.168.171.142/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_2.png">
-<meta property="og:image" content="http://192.168.171.142/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_3.png">
-<meta property="article:published_time" content="2023-02-14T03:04:03.492Z">
-<meta property="article:modified_time" content="2023-02-14T09:46:46.100Z">
 <meta property="article:author" content="秋天以北">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://192.168.171.142/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img.png">
 
-<link rel="canonical" href="http://192.168.171.142/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/">
+<link rel="canonical" href="http://192.168.171.142/myblog/archives/2023/page/2/">
 
 
 <script id="page-configurations">
@@ -48,12 +41,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : true,
+    isPost : false,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title> | 李同学的特殊用法</title>
+  <title>归档 | 李同学的特殊用法</title>
   
 
 
@@ -202,203 +195,54 @@
         <div class="content-wrap">
           
 
-          <div class="content post posts-expand">
+          <div class="content archive">
             
 
-    
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://192.168.171.142/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/myblog/images/avatar.jpg">
-      <meta itemprop="name" content="秋天以北">
-      <meta itemprop="description" content="君子博学而日叁醒乎己，则知明而行无过矣">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李同学的特殊用法">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-        </h1>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-02-14 11:04:03 / 修改时间：17:46:46" itemprop="dateCreated datePublished" datetime="2023-02-14T11:04:03+08:00">2023-02-14</time>
-            </span>
-
-          
-            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span><br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <h1 id="解决k8s中命名空间无法删除的问题"><a href="#解决k8s中命名空间无法删除的问题" class="headerlink" title="解决k8s中命名空间无法删除的问题"></a>解决k8s中命名空间无法删除的问题</h1><p>情况：</p>
-<p>Kubectl delete ns XXXX 后， namespace 一直处于 Terminating 状态。</p>
-<p>使用：</p>
-<p>kubectl delete ns monitoring –grace-period&#x3D;0 –force</p>
-<p>后，也无法删除。</p>
-<p>原因分析：</p>
-<p>删除时，报错：</p>
-<p>warning: Immediate deletion does not wait for confirmation that the running resource has been terminated. The resource may continue to run on the cluster indefinitely.</p>
-<p>Error from server (Conflict): Operation cannot be fulfilled on namespaces “ monitoring “: The system is ensuring all content is removed from this namespace.  Upon completion, this namespace will automatically be purged by the system.</p>
-<p>这是因为 k8s 认为当前命名空间内，还存在未释放资源，它告诉咱们一旦该命名空间下，所以资源释放操作完成，命名空间会自动被清除掉。</p>
-<p>实际观察，可以发现，该命令执行后，namespace也一直卡住，究其原因，应该是的确有部分资源未释放。</p>
-<p>解决思路：</p>
-<p>1、首先查看该命名空间下所有资源：</p>
-<p>kubectl api-resources -o name –verbs&#x3D;list –namespaced</p>
-<p>这条命令可以查看你声明过的资源类型。</p>
-<p>2、然后使用 kubectl get 资源类型 –n 命名空间</p>
-<p>查看是否真的存在未释放的资源。<br><img src="/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img.png" alt="img.png"><br>3、最终结果是，命名空间下全部资源都是No Resources没有！</p>
-<p>网上这份资料提供了另一种解决思路：</p>
-<p><a target="_blank" rel="noopener" href="https://my.oschina.net/u/4222205/blog/3113044">https://my.oschina.net/u/4222205/blog/3113044</a></p>
-<p>1、首先通过</p>
-<p>kubectl get namespace monitoring -o json &gt; monitoring.json</p>
-<p>这条命令，将当前的命名空间以 json文件的形式导出。</p>
-<p>2、将 spec 下的内容删除：这一步骤的目的在于将内容清空后，以空内容的ns覆盖原有ns，这样保证了要删除的ns内容为空，删除的命令也就无法阻塞了<br><img src="/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_1.png" alt="img_1.png"><br>3、将具体内容为空的 namespace ，通过 api-server 接口，覆盖到k8s集群中<br>需要注意的是：由于当前我们k8s主节点使用了认证，如果你直接使用以下命令，调用虚拟IP的api-server接口，会发现请求发送成功，但是没有响应的情况，如下：<br><img src="/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_2.png" alt="img_2.png"></p>
-<p>4、针对有认证的情况，需要使用 kube-proxy 进行代理：<br>kubectl proxy –port&#x3D;8081<br>通过这一条命令，可以在本机使用kube-proxy将 api-server代理到本地 8081端口上，这样就绕过了k8s的认证。<br>需要注意的是，使用 kubectl proxy 命令没有使用守护模式，一次一旦你 Ctrl+c 后，就会发现，netstat –nlp | grep 8081 监听的端口也没有了。</p>
-<p>正确的做法是：打开k8s主节点的两个窗口，<br>在一个窗口中执行 kubectl proxy<br>另一个窗口中执行：<br>curl -k -H “Content-Type: application&#x2F;json” -X PUT –data-binary @monitoring.json <a target="_blank" rel="noopener" href="http://127.0.0.1:8081/api/v1/namespaces/monitoring/finalize">http://127.0.0.1:8081/api/v1/namespaces/monitoring/finalize</a><br><img src="/myblog/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/imgs/img_3.png" alt="img_3.png"></p>
-<p>这个办法解决的原理与强制重启pod的命令其实是一样的：</p>
-<p>kubectl get pod PODNAME -n NAMESPACE -o yaml | kubectl replace –force -f –</p>
-<p>将现有状态导出，再执行覆盖</p>
-
-    </div>
-
-    
-    
-    
-
-    
-      <div>
-        <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:24px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
-    
-</div>
-
-      </div>
-    
-        <div class="reward-container">
-  <div>原创技术分享，您的支持将鼓励我继续创作</div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      
-      <div style="display: inline-block;">
-        <img src="/myblog/images/wechatpay.png" alt="秋天以北 微信支付">
-        <p>微信支付</p>
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <span class="collection-header">嗯..! 目前共计 15 篇日志。 继续努力。</span>
       </div>
 
-  </div>
-</div>
-
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>本文作者： </strong>秋天以北
-  </li>
-  <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="http://192.168.171.142/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/namespace%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4/" title="">http://192.168.171.142/myblog/2023/02/14/9-运维/3-k8s/namespace无法删除/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
-  </li>
-</ul>
-</div>
-
-        
-
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
-
-    <div class="social-list">
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/images/wechat_channel.jpg">
-            <span class="icon">
-              <i class="fab fa-weixin"></i>
-            </span>
-
-            <span class="label">WeChat</span>
-          </a>
-        </div>
-
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/rss2.xml">
-            <span class="icon">
-              <i class="fa fa-rss"></i>
-            </span>
-
-            <span class="label">RSS</span>
-          </a>
-        </div>
+      
+    <div class="collection-year">
+      <span class="collection-header">2023</span>
     </div>
-  </div>
 
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      <footer class="post-footer">
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2023-02-11T11:41:05+08:00"
+              content="2023-02-11">
+          02-11
+        </time>
+      </div>
 
-        
+      <div class="post-title">
+          <a class="post-title-link" href="/myblog/2023/02/11/0-%E5%B7%A5%E5%85%B7%E9%85%8D%E7%BD%AE/1-webStorm/" itemprop="url">
+            <span itemprop="name">未命名</span>
+          </a>
+      </div>
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/myblog/2023/02/13/9-%E8%BF%90%E7%BB%B4/3-k8s/dashboard/" rel="prev" title="">
-      <i class="fa fa-chevron-left"></i> 
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/myblog/2023/02/14/9-%E8%BF%90%E7%BB%B4/3-k8s/K8S%20API%E8%B5%84%E6%BA%90%E2%80%94ApiGroup%E3%80%81Resources%E5%92%8CVerbs/" rel="next" title="">
-       <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
+    </header>
   </article>
+
+
+    </div>
+  </div>
   
   
   
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/myblog/archives/2023/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/myblog/archives/2023/">1</a><span class="page-number current">2</span>
+  </nav>
 
 
 
@@ -450,7 +294,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%A7%A3%E5%86%B3k8s%E4%B8%AD%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4%E6%97%A0%E6%B3%95%E5%88%A0%E9%99%A4%E7%9A%84%E9%97%AE%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">解决k8s中命名空间无法删除的问题</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -466,14 +309,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/myblog/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/myblog/categories/">
           
-        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -542,12 +385,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">231k</span>
+    <span title="站点总字数">243k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">3:30</span>
+    <span title="站点阅读时长">3:40</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
